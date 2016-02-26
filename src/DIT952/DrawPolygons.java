@@ -25,6 +25,7 @@ public class DrawPolygons {
     public static void main(String[] args) {
         PolygonModel polygons = initPolygons();
         PolygonViewer view = new PolygonViewer();
+        polygons.addListener(view);
         view.add(polygons);
         PolygonController controller = new PolygonController(polygons, view);
 
