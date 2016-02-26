@@ -15,7 +15,8 @@ public abstract class Shape extends JComponent {
     private double rotation = 0; // Degrees clockwise
 
     public Point getCenterPoint() {
-        return centerPoint;
+//        return centerPoint;
+    	return new Point(centerPoint);
     }
     public int getScaleX() {
         return scaleX;
